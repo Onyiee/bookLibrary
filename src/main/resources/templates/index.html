@@ -4,10 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        input{
+            width: 400px;
+            height: 100px;
+            color: chocolate;
+            background-color: aliceblue;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        button{
+            border-radius: 10px;
+            margin-top: 10px;
+            color: black;
+            background-color: burlywood;
+        }
+    </style>
 </head>
 <body>
-`
+
 <form action="/book/all" method="get">
+    <div>
+        <h2>Onyi's E-Library</h2>
+        <h3>You Can Search For Any Book In The Search Section Below</h3>
+    </div>
     <div>
         <label>
             <input type="search" placeholder="Search" name="bookName">

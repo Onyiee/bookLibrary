@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -15,4 +16,5 @@ public class VolumeInfo {
     private String previewLink;
     private String publisher;
     private List<String> authors = new ArrayList<>();
+//    private String publishedDate;
 }

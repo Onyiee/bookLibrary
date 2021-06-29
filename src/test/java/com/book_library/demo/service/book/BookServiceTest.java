@@ -1,5 +1,4 @@
 package com.book_library.demo.service.book;
-
 import com.book_library.demo.data.model.Book;
 import com.book_library.demo.service.Book.BookServiceImpl;
 import com.book_library.demo.web.exceptions.BookNotFoundException;
@@ -7,13 +6,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.ArrayList;
 import java.util.List;
-
 import static org.assertj.core.api.Assertions.*;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class BookServiceTest {
@@ -33,7 +27,7 @@ class BookServiceTest {
     assertThat(book.getTitle()).isEqualTo("Pride and Prejudice");
     assertThat(book.getPublisher()).isEqualTo("C. Scribner's sons");
     assertThat(book.getPreviewLink()).isEqualTo("http://books.google.com/books?id=s1gVAAAAYAAJ&hl=&source=gbs_api");
-
+//    assertThat(book.getPublishedDate()).isEqualTo("1918");
     }
 
 

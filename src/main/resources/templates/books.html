@@ -13,11 +13,19 @@
 </head>
 <body>
     <div>
-        <div class="book" th:each="book : ${booklist}">
-            <p th:text="${book.title}"></p>
-            <p th:text="${book.getDescription()}"></p>
-            <img th:src="${book.getImage()}" width="500px" height="500px" alt="Book Image">
-            <a th:href="@{/book/{id}(id = ${book.getId()})}">View Book</a>
+        <div th:if="${booklist.isEmpty()}">
+            <p >No Matching books found. Enter a valid book</p>
+            <a href="/">Search Again</a>
+        </div>
+
+        <div th:unless="${booklist.isEmpty()}">
+            <div class="book" th:each="book : ${booklist}">
+                <p th:text="${book.title}"></p>
+                <p th:text="${book.getDescription()}"></p>
+                <img th:src="${book.getImage()}" width="500px" height="500px" alt="Book Image">
+
+                <a th:unless="" href="@{/book/{id}(id = ${book.getId()})}">View Book</a>
+            </div>
         </div>
     </div>
 </body>

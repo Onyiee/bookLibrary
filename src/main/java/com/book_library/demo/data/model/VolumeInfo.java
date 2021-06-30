@@ -16,5 +16,4 @@ public class VolumeInfo {
     private String previewLink;
     private String publisher;
     private List<String> authors = new ArrayList<>();
-//    private String publishedDate;
 }

@@ -17,6 +17,5 @@ public class Book {
     private String smallImage;
     private String description;
     private List<String> author = new ArrayList<>();
-//    private String publishedDate;
 
 }

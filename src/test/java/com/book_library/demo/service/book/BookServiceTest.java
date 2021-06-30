@@ -29,6 +29,15 @@ class BookServiceTest {
     assertThat(book.getPreviewLink()).isEqualTo("http://books.google.com/books?id=s1gVAAAAYAAJ&hl=&source=gbs_api");
 //    assertThat(book.getPublishedDate()).isEqualTo("1918");
     }
+// @Test
+//    void findBookByIdRework() throws BookNotFoundException {
+//     book = bookService.findBookById("rework");
+//    assertThat(book.getAuthor().get(0)).isEqualTo("Jane Austen");
+//    assertThat(book.getTitle()).isEqualTo("Pride and Prejudice");
+//    assertThat(book.getPublisher()).isEqualTo("C. Scribner's sons");
+//    assertThat(book.getPreviewLink()).isEqualTo("http://books.google.com/books?id=s1gVAAAAYAAJ&hl=&source=gbs_api");
+//    assertThat(book.getPublishedDate()).isEqualTo("1918");
+//    }
 
 
     @Test
